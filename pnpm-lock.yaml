@@ -29,6 +29,9 @@ importers:
       drizzle-orm:
         specifier: 1.0.0-beta.17-67b1795
         version: 1.0.0-beta.17-67b1795(@libsql/client@0.17.0)(@tursodatabase/database-common@0.5.1)(@tursodatabase/database@0.5.1)(@types/better-sqlite3@7.6.13)(@types/mssql@9.1.9(@azure/core-client@1.10.1))(better-sqlite3@12.8.0)(mssql@11.0.1(@azure/core-client@1.10.1))(zod@4.3.6)
+      drizzle-zod:
+        specifier: ^0.8.3
+        version: 0.8.3(drizzle-orm@1.0.0-beta.17-67b1795(@libsql/client@0.17.0)(@tursodatabase/database-common@0.5.1)(@tursodatabase/database@0.5.1)(@types/better-sqlite3@7.6.13)(@types/mssql@9.1.9(@azure/core-client@1.10.1))(better-sqlite3@12.8.0)(mssql@11.0.1(@azure/core-client@1.10.1))(zod@4.3.6))(zod@4.3.6)
       nuxt:
         specifier: ^4.4.2
         version: 4.4.2(d1b5162b9f547755e9076ef3da1e9fa3)
@@ -2619,6 +2622,12 @@ packages:
         optional: true
       zod:
         optional: true
+
+  drizzle-zod@0.8.3:
+    resolution: {integrity: sha512-66yVOuvGhKJnTdiqj1/Xaaz9/qzOdRJADpDa68enqS6g3t0kpNkwNYjUuaeXgZfO/UWuIM9HIhSlJ6C5ZraMww==}
+    peerDependencies:
+      drizzle-orm: '>=0.36.0'
+      zod: ^3.25.0 || ^4.0.0
 
   duplexer@0.1.2:
     resolution: {integrity: sha512-jtD6YG370ZCIi/9GTaJKQxWTZD045+4R4hTk/x1UyoqadyJ9x9CgSi1RlVDQF8U2sxLLSnFkCaMihqljHIWgMg==}
@@ -7177,6 +7186,11 @@ snapshots:
       '@tursodatabase/database-common': 0.5.1
       '@types/better-sqlite3': 7.6.13
       better-sqlite3: 12.8.0
+      zod: 4.3.6
+
+  drizzle-zod@0.8.3(drizzle-orm@1.0.0-beta.17-67b1795(@libsql/client@0.17.0)(@tursodatabase/database-common@0.5.1)(@tursodatabase/database@0.5.1)(@types/better-sqlite3@7.6.13)(@types/mssql@9.1.9(@azure/core-client@1.10.1))(better-sqlite3@12.8.0)(mssql@11.0.1(@azure/core-client@1.10.1))(zod@4.3.6))(zod@4.3.6):
+    dependencies:
+      drizzle-orm: 1.0.0-beta.17-67b1795(@libsql/client@0.17.0)(@tursodatabase/database-common@0.5.1)(@tursodatabase/database@0.5.1)(@types/better-sqlite3@7.6.13)(@types/mssql@9.1.9(@azure/core-client@1.10.1))(better-sqlite3@12.8.0)(mssql@11.0.1(@azure/core-client@1.10.1))(zod@4.3.6)
       zod: 4.3.6
 
   duplexer@0.1.2: {}
