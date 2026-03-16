@@ -1,16 +1,7 @@
-export default defineEventHandler(async () => {
-    await new Promise(resolve => setTimeout(resolve, 2000))
+import db from "../../lib/db";
+import { tasks } from "../../lib/db/schema";
 
-    return [
-        {
-            id: 1,
-            title: "Learn Nuxt",
-            done: false
-        },
-        {
-            id: 2,
-            title: "Learn Vue",
-            done: false
-        }
-    ]
-})
+export default defineEventHandler(async () => {
+    const result = await db.select().from(tasks);
+    return result;
+});

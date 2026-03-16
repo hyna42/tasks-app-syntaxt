@@ -12,6 +12,7 @@
 <style>
 	.error{
 		color: red;
+		font-weight: bold;
 	}
 
 	.button-container{
